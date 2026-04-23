@@ -8,8 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--css-->
+    <link rel="stylesheet" href="./styles/header-style.css">
     <link rel="stylesheet" href="./styles/home-style.css">
     <link rel="stylesheet" href="./styles/proposal-style.css">
+    <link rel="stylesheet" href="./styles/differences-style.css">
+    <link rel="stylesheet" href="/styles/roles-style.css">
     <link rel="stylesheet" href="./styles/team-style.css">
     <link rel="stylesheet" href="./styles/pricing-style.css">
     <link rel="stylesheet" href="./styles/contact-style.css">
@@ -20,7 +23,8 @@
     <!--favicon-->
     <link rel="icon" type="image/png" href="./images/logoWithOutBackground.png">
     <script src="https://kit.fontawesome.com/350b7ab1bf.js" crossorigin="anonymous"></script>
-    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +33,24 @@
 </head>
 
 <body>
+    <header class="main-header">
+        <div class="header-logo">
+            <img src="images/logoWithOutBackground.png" alt="Kipu Logo">
+        </div>
+        <nav class="main-navigation">
+            <ul class="nav-list">
+                <li><a href="#home" data-i18n="header_nav_home">Inicio</a></li>
+                <li><a href="#proposal" data-i18n="header_nav_proposal">Propuestas</a></li>
+                <li><a href="#differences" data-i18n="header_nav_features">Características</a></li>
+                <li><a href="#team" data-i18n="header_nav_team">Equipo</a></li>
+                <li><a href="#pricing" data-i18n="header_nav_pricing">Planes</a></li>
+                <li><a href="#contact" data-i18n="header_nav_contact">Contacto</a></li>
+                <li class="nav-action">
+                    <button type="button" class="btn-login" data-i18n="header_btn_login">Ingresar</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <section class="home">
         <div class="home-info">
             <div class="pretitle">
@@ -73,7 +95,79 @@
             </ul>
         </div>
     </section>
+    <section class="differences" id="differences">
+        <div class="differences-introduction-titles">
+            <p data-i18n="differences_badge">¿Qué nos diferencia?</p>
+            <h2 id="differences-title" data-i18n="differences_title">El estándar que impulsa tu obra</h2>
+            <h3 data-i18n="differences_subtitle">Transformamos la complejidad técnica en una gestión fluida, centralizando cada decisión crítica de tu obra en una sola interfaz.</h3>
+        </div>
 
+        <div class="differences-group-cards">
+            <article class="differences-card">
+                <i data-lucide="package" aria-hidden="true"></i>
+                <h3 data-i18n="differences_card_1_title" >Gestión de Inventario</h3>
+                <p data-i18n="differences_card_1_description">Optimiza recursos y evita compras duplicadas.</p>
+            </article>
+
+            <article class="differences-card">
+                <i data-lucide="chart-column-increasing" aria-hidden="true"></i>
+                <h3 data-i18n="differences_card_2_title">Seguimiento de PPC y Avance</h3>
+                <p data-i18n="differences_card_2_description">Supervisa indicadores en tiempo real y reduce RNC.</p>
+            </article>
+
+            <article class="differences-card">
+                <i data-lucide="clipboard-check" aria-hidden="true"></i>
+                <h3 data-i18n="differences_card_3_title">Trazabilidad de Planos </h3>
+                <p data-i18n="differences_card_3_description">Asegura el uso de la versión final y evita errores costosos.</p>
+            </article>
+
+            <article class="differences-card">
+                <i data-lucide="file-text" aria-hidden="true"></i>
+                <h3 data-i18n="differences_card_4_title">Registro de RNC</h3>
+                <p data-i18n="differences_card_4_description">Automatiza auditorías y garantiza el control de calidad.</p>
+            </article>
+
+            <article class="differences-card">
+                <i data-lucide="users" aria-hidden="true"></i>
+                <h3 data-i18n="differences_card_5_title">Comunicación Centralizada</h3>
+                <p data-i18n="differences_card_5_description">Flujo de información fluido entre obreros, ingenieros y clientes.</p>
+            </article>
+
+            <article class="differences-card">
+                <i data-lucide="waypoints" aria-hidden="true"></i>
+                <h3 data-i18n="differences_card_6_title">Implementación IoT</h3>
+                <p data-i18n="differences_card_6_description">Configura y gestiona IoT dentro de tu proyecto</p>
+            </article>
+        </div>
+    </section>
+    <section class="roles-section">
+        <div class="roles-container">
+            <article class="role-card role-dark">
+                <div class="role-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h3 data-i18n="roles_card_1_title">Equipos de Logística</h3>
+                <p data-i18n="roles_card_1_description">
+                    Optimiza tus procesos hoy: solicita una demo y descubre cómo Kipu revoluciona tu logística operativa.
+                </p>
+                <button class="role-btn" data-i18n="roles_card_1_button">
+                    Solicitar Demostración →
+                </button>
+            </article>
+            <article class="role-card role-light">
+                <div class="role-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 data-i18n="roles_card_2_title">Gestores Operativos</h3>
+                <p data-i18n="roles_card_2_description">
+                    Mira Kipu en acción y transforma la gestión de tus proyectos con nuestra tecnología de validación en tiempo real.
+                </p>
+                <button class="role-btn role-btn-light" data-i18n="roles_card_2_button">
+                    Solicitar Demostración →
+                </button>
+            </article>
+        </div>
+    </section>
     <section class="team">
         <div class="team-info">
             <div class="pretitle">
@@ -408,7 +502,15 @@
     <footer>
         <p data-i18n="footer_copy">© 2024 Kipu. Todos los derechos reservados.</p>
     </footer>
-
+    <script>
+        lucide.createIcons({
+            attrs: {
+                stroke: 'currentColor',
+                'stroke-width': 1.5,
+                class: 'lucide-icon'
+            }
+        });
+    </script>
     <script src="./scripts/script.js"></script>
 
 </body>
