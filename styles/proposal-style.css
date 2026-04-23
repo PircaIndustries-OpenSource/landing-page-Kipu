@@ -92,7 +92,7 @@
 	font-weight: 300;
 }
 
-.proposal-benefits li span {
+.proposal-benefits li .proposal-benefit-icon {
 	width: 1.55rem;
 	height: 1.55rem;
 	border-radius: 50%;

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/proposal-style.css">
     <link rel="stylesheet" href="./styles/team-style.css">
     <link rel="stylesheet" href="./styles/pricing-style.css">
+    <link rel="stylesheet" href="./styles/contact-style.css">
 
     <!--title-->
     <title>Kipu</title>
@@ -31,13 +32,13 @@
     <section class="home">
         <div class="home-info">
             <div class="pretitle">
-                <p>Innovación Tech para Construcción</p>
+                <p data-i18n="home_pretitle">Innovación Tech para Construcción</p>
             </div>
-            <h1>Construye ciudades con control total.</h1>
-            <p class="p-info">Kipu centraliza la gestión operativa de tu obra en un ecosistema Open Source. Automatiza el control de presupuestos, logística y seguimiento de planos para eliminar errores y maximizar la rentabilidad.</p>
+            <h1 data-i18n="home_title">Construye ciudades con control total.</h1>
+            <p class="p-info" data-i18n="home_info">Kipu centraliza la gestión operativa de tu obra en un ecosistema Open Source. Automatiza el control de presupuestos, logística y seguimiento de planos para eliminar errores y maximizar la rentabilidad.</p>
             <div class="btn-home-section">
-                <button class="btn-create-account">Crear Cuenta Gratuita <i class="fa-solid fa-arrow-right"></i></button>
-                <button class="btn-watch-demostration"><i class="fa-solid fa-play"></i> Ver Demostración</button>
+                <button class="btn-create-account"><span data-i18n="home_cta_primary">Crear Cuenta Gratuita</span> <i class="fa-solid fa-arrow-right"></i></button>
+                <button class="btn-watch-demostration"><i class="fa-solid fa-play"></i> <span data-i18n="home_cta_secondary">Ver Demostración</span></button>
             </div>
         </div>
 
@@ -52,23 +53,23 @@
         <div class="proposal-style">
             <div class="proposal-photo-wrapper">
                 <div class="proposal-photo-bg"></div>
-                <img src="./images/proposal-photo.jpg" alt="Foto de una ingeniera con malestar emocional">
+                <img src="./images/proposal-photo.jpg" alt="Foto de una ingeniera con malestar emocional" data-i18n-alt="proposal_image_alt">
             </div>
         </div>
 
         <div class="proposal-info">
-            <span class="proposal-badge">Eficiencia Operativa</span>
-            <h2>Di adiós a los mails y las hojas de cálculo.</h2>
-            <p>
+            <span class="proposal-badge" data-i18n="proposal_badge">Eficiencia Operativa</span>
+            <h2 data-i18n="proposal_title">Di adiós a los mails y las hojas de cálculo.</h2>
+            <p data-i18n="proposal_text">
                 Centraliza tu documentación técnica y automatiza el 
                 seguimiento de proyectos de edificación en un solo lugar. 
                 Seguimiento total a los materiales de obra y sus costos.
             </p>
 
             <ul class="proposal-benefits">
-                <li><span><i class="fa-solid fa-check"></i></span>Dominio de tu proyecto</li>
-                <li><span><i class="fa-solid fa-check"></i></span>Historial detallado de tus avances</li>
-                <li><span><i class="fa-solid fa-check"></i></span>Comunicación inmediata entre áreas</li>
+                <li><span class="proposal-benefit-icon"><i class="fa-solid fa-check"></i></span><span data-i18n="proposal_benefit_1">Dominio de tu proyecto</span></li>
+                <li><span class="proposal-benefit-icon"><i class="fa-solid fa-check"></i></span><span data-i18n="proposal_benefit_2">Historial detallado de tus avances</span></li>
+                <li><span class="proposal-benefit-icon"><i class="fa-solid fa-check"></i></span><span data-i18n="proposal_benefit_3">Comunicación inmediata entre áreas</span></li>
             </ul>
         </div>
     </section>
@@ -76,10 +77,10 @@
     <section class="team">
         <div class="team-info">
             <div class="pretitle">
-                <p>Nuestro equipo</p>
+                <p data-i18n="team_pretitle">Nuestro equipo</p>
             </div>
-            <h2>Los creadores de Kipu</h2>
-            <p class="pretitle-info">Quienes somos y que es lo que hacemos</p>
+            <h2 data-i18n="team_title">Los creadores de Kipu</h2>
+            <p class="pretitle-info" data-i18n="team_subtitle">Quienes somos y que es lo que hacemos</p>
         </div>
 
         <ul class="member-list">
@@ -94,53 +95,8 @@
                 </div>
                 <div class="member">
                     <h3 class="name">Jhony Francia</h3>
-                    <p class="role">Software Developer, Database Designer & Manager</p>
-                    <p class="detail">Estudiante de Ingeniería de Software, experiencia en C#, HTML y SQL</p>
-                </div>
-            </li>
-            <li class="member-item">
-                <div class="member-profile-container">
-                    <div class="member-profile">
-                        <img src="./images/profiles/paula.jpg" alt="Paula Montoya">
-                    </div>
-                    <div class="github-badge">
-                        <img src="./images/github-icon.png" alt="Github Profile">
-                    </div>
-                </div>
-                <div class="member">
-                    <h3 class="name">Paula Montoya</h3>
-                    <p class="role">Software Architect</p>
-                    <p class="detail">Estudiante de Ingeniería de Software, experiencia con Javascript, Java y C#.</p>
-                </div>
-            </li>
-            <li class="member-item">
-                <div class="member-profile-container">
-                    <div class="member-profile">
-                        <img src="./images/profiles/marcelo.jpg" alt="Marcelo Pareja">
-                    </div>
-                    <div class="github-badge">
-                        <img src="./images/github-icon.png" alt="Github Profile">
-                    </div>
-                </div>
-                <div class="member">
-                    <h3 class="name">Marcelo Pareja</h3>
-                    <p class="role">Domain Analyst</p>
-                    <p class="detail">Estudiante de Ingeniería de Software, experiencia con Javascript, Java y C#.</p>
-                </div>
-            </li>
-            <li class="member-item">
-                <div class="member-profile-container">
-                    <div class="member-profile">
-                        <img src="./images/profiles/neo.jpg" alt="Neo Ramos">
-                    </div>
-                    <div class="github-badge">
-                        <img src="./images/github-icon.png" alt="Github Profile">
-                    </div>
-                </div>
-                <div class="member">
-                    <h3 class="name">Neo Ramos</h3>
-                    <p class="role">Software Developer, UX/UI Designer</p>
-                    <p class="detail">Estudiante de Ingeniería de Software, experiencia con Javascript, Java y C#.</p>
+                    <p class="role" data-i18n="team_member_1_role">Software Developer, Database Designer & Manager</p>
+                    <p class="detail" data-i18n="team_member_1_detail">Estudiante de Ingeniería de Software, experiencia en C#, HTML y SQL</p>
                 </div>
             </li>
             <li class="member-item">
@@ -154,8 +110,53 @@
                 </div>
                 <div class="member">
                     <h3 class="name">Diego Ramos</h3>
-                    <p class="role">Team Leader</p>
-                    <p class="detail">Estudiante de Ingeniería de Software, experiencia con Javascript, Java y C#.</p>
+                    <p class="role" data-i18n="team_member_2_role">Software Architect</p>
+                    <p class="detail" data-i18n="team_member_2_detail">Estudiante de Ingeniería de Software, experiencia con Javascript, Java y C#.</p>
+                </div>
+            </li>
+            <li class="member-item">
+                <div class="member-profile-container">
+                    <div class="member-profile">
+                        <img src="./images/profiles/marcelo.jpg" alt="Marcelo Pareja">
+                    </div>
+                    <div class="github-badge">
+                        <img src="./images/github-icon.png" alt="Github Profile">
+                    </div>
+                </div>
+                <div class="member">
+                    <h3 class="name">Marcelo Pareja</h3>
+                    <p class="role" data-i18n="team_member_3_role">Domain Analyst</p>
+                    <p class="detail" data-i18n="team_member_3_detail">Estudiante de Ingeniería de Software, experiencia con Javascript, Java y C#.</p>
+                </div>
+            </li>
+            <li class="member-item">
+                <div class="member-profile-container">
+                    <div class="member-profile">
+                        <img src="./images/profiles/neo.jpg" alt="Neo Ramos">
+                    </div>
+                    <div class="github-badge">
+                        <img src="./images/github-icon.png" alt="Github Profile">
+                    </div>
+                </div>
+                <div class="member">
+                    <h3 class="name">Neo Ramos</h3>
+                    <p class="role" data-i18n="team_member_4_role">Software Developer, UX/UI Designer</p>
+                    <p class="detail" data-i18n="team_member_4_detail">Estudiante de Ingeniería de Software, experiencia con Javascript, Java y C#.</p>
+                </div>
+            </li>
+            <li class="member-item">
+                <div class="member-profile-container">
+                    <div class="member-profile">
+                        <img src="./images/profiles/paula.jpg" alt="Paula Montoya">
+                    </div>
+                    <div class="github-badge">
+                        <img src="./images/github-icon.png" alt="Github Profile">
+                    </div>
+                </div>
+                <div class="member">
+                    <h3 class="name">Paula Montoya</h3>
+                    <p class="role" data-i18n="team_member_5_role">Team Leader</p>
+                    <p class="detail" data-i18n="team_member_5_detail">Estudiante de Ingeniería de Software, experiencia con Javascript, Java y C#.</p>
                 </div>
             </li>
         </ul>
@@ -165,9 +166,9 @@
 
         <!-- Section Header -->
         <header class="pricing-header">
-            <span class="pricing-header__badge">Suscripciones</span>
-            <h2 class="pricing-header__title">Elige a Kipu! Con un descuento especial!</h2>
-            <p class="pricing-header__subtitle">Las mejores funcionalidades a un precio razonable.</p>
+            <span class="pricing-header__badge" data-i18n="pricing_badge">Suscripciones</span>
+            <h2 class="pricing-header__title" data-i18n="pricing_title">Elige a Kipu! Con un descuento especial!</h2>
+            <p class="pricing-header__subtitle" data-i18n="pricing_subtitle">Las mejores funcionalidades a un precio razonable.</p>
         </header>
 
         <!-- Pricing Cards Container -->
@@ -181,44 +182,44 @@
                             <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="pricing-card__title">Free</h3>
+                    <h3 class="pricing-card__title" data-i18n="pricing_free_title">Free</h3>
                 </header>
 
                 <div class="pricing-card__price-block">
                     <span class="pricing-card__price">0</span>
-                    <span class="pricing-card__period">/mes</span>
+                    <span class="pricing-card__period" data-i18n="pricing_period">/mes</span>
                 </div>
 
-                <p class="pricing-card__description">La prueba que necesitas para decidirte por Kipu</p>
+                <p class="pricing-card__description" data-i18n="pricing_free_description">La prueba que necesitas para decidirte por Kipu</p>
 
                 <ul class="pricing-card__features-list">
                     <li class="pricing-card__feature-item">
                         <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        Trazabilidad de Planos Básica
+                        <span data-i18n="pricing_free_feature_1">Trazabilidad de Planos Básica</span>
                     </li>
                     <li class="pricing-card__feature-item">
                         <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        Core de Gestión de Obra
+                        <span data-i18n="pricing_free_feature_2">Core de Gestión de Obra</span>
                     </li>
                     <li class="pricing-card__feature-item">
                         <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        Almacenamiento de inventario limitado
+                        <span data-i18n="pricing_free_feature_3">Almacenamiento de inventario limitado</span>
                     </li>
                 </ul>
 
-                <a href="#" class="pricing-card__button pricing-card__button--outline">Comenzar Gratis</a>
+                <a href="#" class="pricing-card__button pricing-card__button--outline" data-i18n="pricing_free_button">Comenzar Gratis</a>
             </article>
 
             <!-- 2. Professional Plan Card (Highlighted) -->
             <article class="pricing-card pricing-card--highlighted">
                 <!-- Highlight Banner -->
-                <div class="pricing-card__banner">Más Popular</div>
+                <div class="pricing-card__banner" data-i18n="pricing_popular">Más Popular</div>
 
                 <div class="pricing-card__content-wrapper">
                     <header class="pricing-card__header">
@@ -227,50 +228,50 @@
                                 <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <h3 class="pricing-card__title">Professional</h3>
+                        <h3 class="pricing-card__title" data-i18n="pricing_pro_title">Professional</h3>
                     </header>
 
                     <div class="pricing-card__price-block">
                         <span class="pricing-card__price">49</span>
-                        <span class="pricing-card__period">/mes</span>
+                        <span class="pricing-card__period" data-i18n="pricing_period">/mes</span>
                     </div>
 
-                    <p class="pricing-card__description">La solución SaaS completa y lista para usar, con soporte dedicado.</p>
+                    <p class="pricing-card__description" data-i18n="pricing_pro_description">La solución SaaS completa y lista para usar, con soporte dedicado.</p>
 
                     <ul class="pricing-card__features-list">
                         <li class="pricing-card__feature-item">
                             <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            Alertas de Stock Crítico
+                            <span data-i18n="pricing_pro_feature_1">Alertas de Stock Crítico</span>
                         </li>
                         <li class="pricing-card__feature-item">
                             <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            Proyectos Ilimitados
+                            <span data-i18n="pricing_pro_feature_2">Proyectos Ilimitados</span>
                         </li>
                         <li class="pricing-card__feature-item">
                             <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            Módulo IoT Avanzado
+                            <span data-i18n="pricing_pro_feature_3">Módulo IoT Avanzado</span>
                         </li>
                         <li class="pricing-card__feature-item">
                             <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            Dashboard de KPIs
+                            <span data-i18n="pricing_pro_feature_4">Dashboard de KPIs</span>
                         </li>
                         <li class="pricing-card__feature-item">
                             <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            Gestión avanzada de documentación a tiempo real
+                            <span data-i18n="pricing_pro_feature_5">Gestión avanzada de documentación a tiempo real</span>
                         </li>
                     </ul>
 
-                    <a href="#" class="pricing-card__button pricing-card__button--solid">Comenzar Prueba</a>
+                    <a href="#" class="pricing-card__button pricing-card__button--solid" data-i18n="pricing_pro_button">Comenzar Prueba</a>
                 </div>
             </article>
 
@@ -282,46 +283,133 @@
                             <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="pricing-card__title">Enterprise</h3>
+                    <h3 class="pricing-card__title" data-i18n="pricing_ent_title">Enterprise</h3>
                 </header>
 
                 <div class="pricing-card__price-block">
-                    <span class="pricing-card__price pricing-card__price--text">Custom</span>
-                    <span class="pricing-card__period">/mes</span>
+                        <span class="pricing-card__price pricing-card__price--text" data-i18n="pricing_custom">Custom</span>
+                        <span class="pricing-card__period" data-i18n="pricing_period">/mes</span>
                 </div>
 
-                <p class="pricing-card__description">Una cotización especial para las empresas.</p>
+                <p class="pricing-card__description" data-i18n="pricing_ent_description">Una cotización especial para las empresas.</p>
 
                 <ul class="pricing-card__features-list">
                     <li class="pricing-card__feature-item">
                         <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        Flexibilidad en el modelo de negocio
+                        <span data-i18n="pricing_ent_feature_1">Flexibilidad en el modelo de negocio</span>
                     </li>
                     <li class="pricing-card__feature-item">
                         <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        Control de costos y escalabilidad
+                        <span data-i18n="pricing_ent_feature_2">Control de costos y escalabilidad</span>
                     </li>
                     <li class="pricing-card__feature-item">
                         <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        Seguridad y propiedad de datos
+                        <span data-i18n="pricing_ent_feature_3">Seguridad y propiedad de datos</span>
                     </li>
                 </ul>
 
-                <a href="#" class="pricing-card__button pricing-card__button--outline">Contactar Ventas</a>
+                <a href="#" class="pricing-card__button pricing-card__button--outline" data-i18n="pricing_ent_button">Contactar Ventas</a>
             </article>
 
         </div>
     </section>
 
+    <section class="contact-section" id="contact">
+        <header class="contact-header">
+            <span class="contact-header__badge" data-i18n="contact_badge">Contacto</span>
+            <h2 class="contact-header__title" data-i18n="contact_title">Comunicate con nosotros</h2>
+            <p class="contact-header__subtitle" data-i18n="contact_subtitle">Kipu se mantiene a la espera de nuevas empresas que esten interesadas en nuestro proyecto.</p>
+        </header>
+
+        <div class="contact-grid">
+            <article class="contact-card contact-card--form">
+                <h3 data-i18n="contact_form_title">Envíanos un mensaje</h3>
+
+                <form class="contact-form" action="#" method="post" novalidate>
+                    <div class="contact-form__row">
+                        <label>
+                            <span data-i18n="contact_first_name">Nombre</span>
+                            <input type="text" data-i18n-placeholder="contact_placeholder_first_name" placeholder="Tu nombre">
+                        </label>
+                        <label>
+                            <span data-i18n="contact_last_name">Apellido</span>
+                            <input type="text" data-i18n-placeholder="contact_placeholder_last_name" placeholder="Tu apellido">
+                        </label>
+                    </div>
+
+                    <label>
+                        <span data-i18n="contact_email">Email</span>
+                        <input type="email" data-i18n-placeholder="contact_placeholder_email" placeholder="correo@empresa.com">
+                    </label>
+
+                    <label>
+                        <span data-i18n="contact_company">Empresa</span>
+                        <input type="text" data-i18n-placeholder="contact_placeholder_company" placeholder="Nombre de la empresa">
+                    </label>
+
+                    <label>
+                        <span data-i18n="contact_message">Mensaje</span>
+                        <textarea rows="6" data-i18n-placeholder="contact_placeholder_message" placeholder="Cuéntanos de tu proyecto"></textarea>
+                    </label>
+
+                    <button type="submit" class="contact-submit-btn">
+                        <i class="fa-regular fa-paper-plane"></i>
+                        <span data-i18n="contact_send">Enviar Mensaje</span>
+                    </button>
+                </form>
+            </article>
+
+            <aside class="contact-side">
+                <article class="contact-card contact-card--info">
+                    <h3 data-i18n="contact_info_title">Información de contacto</h3>
+
+                    <div class="contact-info-item">
+                        <span class="contact-info-item__icon"><i class="fa-regular fa-envelope"></i></span>
+                        <div>
+                            <h4 data-i18n="contact_email_label">Email</h4>
+                            <p>org@kipu.com</p>
+                            <p>support@kipu.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <span class="contact-info-item__icon"><i class="fa-solid fa-phone"></i></span>
+                        <div>
+                            <h4 data-i18n="contact_phone_label">Teléfono</h4>
+                            <p>+1 (555) 123-4567</p>
+                            <p>+1 (555) 987-6543</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <span class="contact-info-item__icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <div>
+                            <h4 data-i18n="contact_address_label">Dirección</h4>
+                            <p data-i18n="contact_address_text">123 Lima, Lima 12345</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="contact-card contact-card--map" aria-label="map">
+                    <i class="fa-regular fa-compass" aria-hidden="true"></i>
+                </article>
+            </aside>
+        </div>
+    </section>
+
+    <button class="language-toggle" type="button" aria-label="Toggle language">EN</button>
+
     <footer>
-        <p>© 2024 Kipu. Todos los derechos reservados.</p>
+        <p data-i18n="footer_copy">© 2024 Kipu. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="./scripts/script.js"></script>
 
 </body>
 
