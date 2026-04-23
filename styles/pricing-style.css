@@ -1,0 +1,274 @@
+:root {
+    /* Colors */
+    --color-text-main: #212529;
+    --color-primary: #2C3E50;
+    --color-bg-light: #F8F9FA;
+    --color-neutral: #B0BEC5;
+    --color-accent: #3498DB;
+    --color-white: #FFFFFF;
+
+    /* Spacing (8px grid scale based on README) */
+    --spacing-x-small: 0.25rem; /* 4px */
+    --spacing-small: 0.5rem;    /* 8px */
+    --spacing-medium: 1rem;     /* 16px */
+    --spacing-large: 1.5rem;    /* 24px */
+    --spacing-x-large: 2rem;    /* 32px */
+    --spacing-section: 4rem;    /* 64px */
+
+    /* Borders */
+    --border-thin: 0.0625rem; /* 1px equivalent */
+    --border-thick: 0.125rem; /* 2px equivalent */
+    --border-radius-small: 0.25rem;
+    --border-radius-medium: 0.5rem;
+    --border-radius-large: 1rem;
+}
+
+/* --- 2. Base Styles --- */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-main);
+    background-color: var(--color-white);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* --- 3. Pricing Section Container --- */
+.pricing-section {
+    padding: var(--spacing-section) var(--spacing-large);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white);
+}
+
+/* --- 4. Pricing Header --- */
+.pricing-header {
+    text-align: center;
+    margin-bottom: var(--spacing-section);
+    max-width: 37.5rem; /* 600px */
+}
+
+.pricing-header__badge {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500;
+    padding: var(--spacing-x-small) var(--spacing-medium);
+    border-radius: 6.25rem; /* 100px - fully rounded */
+    margin-bottom: var(--spacing-medium);
+}
+
+.pricing-header__title {
+    font-size: 2.25rem; /* 36px */
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0 0 var(--spacing-small) 0;
+}
+
+.pricing-header__subtitle {
+    font-size: 1.125rem; /* 18px */
+    color: var(--color-neutral); /* Assuming grey text for subtitle */
+    margin: 0;
+}
+
+/* --- 5. Pricing Cards Grid --- */
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--spacing-x-large);
+    width: 100%;
+    max-width: 68.75rem; /* 1100px */
+}
+
+/* Responsive Grid for Tablets and Desktops */
+@media (min-width: 48rem) { /* 768px */
+    .pricing-cards {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+    }
+}
+
+/* --- 6. Pricing Card Component --- */
+.pricing-card {
+    background-color: var(--color-white);
+    border: var(--border-thin) solid var(--color-bg-light);
+    border-radius: var(--border-radius-large);
+    padding: var(--spacing-x-large);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect as requested: Moves up slightly */
+.pricing-card:hover {
+    transform: translateY(-0.75rem);
+    box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+/* Highlighted (Professional) Card */
+.pricing-card--highlighted {
+    border: var(--border-thick) solid var(--color-text-main); /* Dark border based on image */
+    padding: 0; /* Remove padding to accommodate banner */
+    overflow: hidden;
+}
+
+.pricing-card--highlighted .pricing-card__content-wrapper {
+    padding: var(--spacing-x-large);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Top Banner for Highlighted Card */
+.pricing-card__banner {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: var(--spacing-small) 0;
+    width: 100%;
+}
+
+/* --- Card Header (Icon + Title) --- */
+.pricing-card__header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-small);
+    margin-bottom: var(--spacing-large);
+}
+
+.pricing-card__icon-wrapper {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--border-radius-small);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-card__icon-wrapper--light {
+    background-color: var(--color-bg-light);
+    color: var(--color-accent);
+}
+
+.pricing-card__icon-wrapper--solid {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+.pricing-card__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: currentColor;
+}
+
+.pricing-card__title {
+    font-size: 1.25rem; /* 20px */
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+/* --- Card Price --- */
+.pricing-card__price-block {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: var(--spacing-small);
+}
+
+.pricing-card__price {
+    font-size: 3.5rem; /* 56px */
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.pricing-card__price--text {
+    font-size: 2.5rem; /* 40px for "Custom" */
+}
+
+.pricing-card__period {
+    font-size: 1rem;
+    color: var(--color-neutral);
+    margin-left: var(--spacing-x-small);
+    font-weight: 500;
+}
+
+/* --- Card Description --- */
+.pricing-card__description {
+    font-size: 0.875rem;
+    color: var(--color-neutral);
+    line-height: 1.5;
+    margin: 0 0 var(--spacing-large) 0;
+    min-height: 3rem; /* Ensures alignment across cards */
+}
+
+/* --- Card Features List --- */
+.pricing-card__features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-large) 0;
+    flex-grow: 1; /* Pushes the button to the bottom */
+}
+
+.pricing-card__feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-small);
+    font-size: 0.875rem;
+    color: var(--color-text-main);
+    margin-bottom: var(--spacing-medium);
+    line-height: 1.4;
+}
+
+.pricing-card__feature-check {
+    width: 1rem;
+    height: 1rem;
+    color: var(--color-accent);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+/* --- Card Buttons --- */
+.pricing-card__button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius-medium);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.pricing-card__button--outline {
+    background-color: transparent;
+    color: var(--color-accent);
+    border: var(--border-thin) solid var(--color-accent);
+}
+
+.pricing-card__button--outline:hover {
+    background-color: var(--color-bg-light);
+}
+
+.pricing-card__button--solid {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border: var(--border-thin) solid var(--color-accent);
+}
+
+.pricing-card__button--solid:hover {
+    background-color: #2980B9; /* Slightly darker blue */
+    border-color: #2980B9;
+}
