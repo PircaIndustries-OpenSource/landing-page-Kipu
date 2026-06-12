@@ -6,7 +6,7 @@
     <meta name="author" content="PircaIndustries">
     <meta name="description" content="Kipu Landing Page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--css-->
     <link rel="stylesheet" href="./styles/header-style.css">
     <link rel="stylesheet" href="./styles/home-style.css">
@@ -19,7 +19,7 @@
 
     <!--title-->
     <title>Kipu</title>
-    
+
     <!--favicon-->
     <link rel="icon" type="image/png" href="./images/logoWithOutBackground.png">
     <script src="https://kit.fontawesome.com/350b7ab1bf.js" crossorigin="anonymous"></script>
@@ -28,8 +28,11 @@
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -46,36 +49,53 @@
                 <li><a href="#pricing" data-i18n="header_nav_pricing">Planes</a></li>
                 <li><a href="#contact" data-i18n="header_nav_contact">Contacto</a></li>
                 <li class="nav-action">
-                    <button type="button" class="btn-login" data-i18n="header_btn_login" onclick="window.location.href='https://kipu-frontend-42d0d.web.app/'">Ingresar</button>
+                    <button type="button" class="btn-login" data-i18n="header_btn_login"
+                        onclick="window.location.href='https://kipu-frontend-42d0d.web.app/'">Ingresar</button>
+                </li>
+                <li class="nav-language">
+                    <div class="language-switcher">
+                        <button type="button" class="lang-btn" data-lang="es"
+                            aria-label="Cambiar idioma a Español">ES</button>
+                        <button type="button" class="lang-btn" data-lang="en"
+                            aria-label="Switch language to English">EN</button>
+                    </div>
                 </li>
             </ul>
         </nav>
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-info">
             <div class="pretitle">
                 <p data-i18n="home_pretitle">Innovación Tech para Construcción</p>
             </div>
             <h1 data-i18n="home_title">Construye ciudades con control total.</h1>
-            <p class="p-info" data-i18n="home_info">Kipu centraliza la gestión operativa de tu obra en un ecosistema Open Source. Automatiza el control de presupuestos, logística y seguimiento de planos para eliminar errores y maximizar la rentabilidad.</p>
+            <p class="p-info" data-i18n="home_info">Kipu centraliza la gestión operativa de tu obra en un ecosistema
+                Open Source. Automatiza el control de presupuestos, logística y seguimiento de planos para eliminar
+                errores y maximizar la rentabilidad.</p>
             <div class="btn-home-section">
-                <button class="btn-create-account" onclick="window.location.href='https://kipu-frontend-42d0d.web.app/'"><span data-i18n="home_cta_primary">Crear Cuenta Gratuita</span> <i class="fa-solid fa-arrow-right"></i></button>
-                <button class="btn-watch-demostration"><i class="fa-solid fa-play"></i> <span data-i18n="home_cta_secondary">Ver Demostración</span></button>
+                <button class="btn-create-account"
+                    onclick="window.location.href='https://kipu-frontend-42d0d.web.app/'"><span
+                        data-i18n="home_cta_primary">Crear Cuenta Gratuita</span> <i
+                        class="fa-solid fa-arrow-right"></i></button>
+                <button class="btn-watch-demostration"><i class="fa-solid fa-play"></i> <span
+                        data-i18n="home_cta_secondary">Ver Demostración</span></button>
             </div>
         </div>
 
         <div class="home-image">
-            <img src="./images/home-photo.jpeg" alt="Foto de una ingeniera usando un programa tecnólógico para gestionar su obra.">
+            <img src="./images/home-photo.jpeg"
+                alt="Foto de una ingeniera usando un programa tecnólógico para gestionar su obra.">
             <div class="circle circle-top-right"></div>
             <div class="circle circle-bottom-left"></div>
         </div>
     </section>
 
-    <section class="proposal">
+    <section class="proposal" id="proposal">
         <div class="proposal-style">
             <div class="proposal-photo-wrapper">
                 <div class="proposal-photo-bg"></div>
-                <img src="./images/proposal-photo.jpg" alt="Foto de una ingeniera con malestar emocional" data-i18n-alt="proposal_image_alt">
+                <img src="./images/proposal-photo.jpg" alt="Foto de una ingeniera con malestar emocional"
+                    data-i18n-alt="proposal_image_alt">
             </div>
         </div>
 
@@ -83,15 +103,18 @@
             <span class="proposal-badge" data-i18n="proposal_badge">Eficiencia Operativa</span>
             <h2 data-i18n="proposal_title">Di adiós a los mails y las hojas de cálculo.</h2>
             <p data-i18n="proposal_text">
-                Centraliza tu documentación técnica y automatiza el 
-                seguimiento de proyectos de edificación en un solo lugar. 
+                Centraliza tu documentación técnica y automatiza el
+                seguimiento de proyectos de edificación en un solo lugar.
                 Seguimiento total a los materiales de obra y sus costos.
             </p>
 
             <ul class="proposal-benefits">
-                <li><span class="proposal-benefit-icon"><i class="fa-solid fa-check"></i></span><span data-i18n="proposal_benefit_1">Dominio de tu proyecto</span></li>
-                <li><span class="proposal-benefit-icon"><i class="fa-solid fa-check"></i></span><span data-i18n="proposal_benefit_2">Historial detallado de tus avances</span></li>
-                <li><span class="proposal-benefit-icon"><i class="fa-solid fa-check"></i></span><span data-i18n="proposal_benefit_3">Comunicación inmediata entre áreas</span></li>
+                <li><span class="proposal-benefit-icon"><i class="fa-solid fa-check"></i></span><span
+                        data-i18n="proposal_benefit_1">Dominio de tu proyecto</span></li>
+                <li><span class="proposal-benefit-icon"><i class="fa-solid fa-check"></i></span><span
+                        data-i18n="proposal_benefit_2">Historial detallado de tus avances</span></li>
+                <li><span class="proposal-benefit-icon"><i class="fa-solid fa-check"></i></span><span
+                        data-i18n="proposal_benefit_3">Comunicación inmediata entre áreas</span></li>
             </ul>
         </div>
     </section>
@@ -99,13 +122,14 @@
         <div class="differences-introduction-titles">
             <p data-i18n="differences_badge">¿Qué nos diferencia?</p>
             <h2 id="differences-title" data-i18n="differences_title">El estándar que impulsa tu obra</h2>
-            <h3 data-i18n="differences_subtitle">Transformamos la complejidad técnica en una gestión fluida, centralizando cada decisión crítica de tu obra en una sola interfaz.</h3>
+            <h3 data-i18n="differences_subtitle">Transformamos la complejidad técnica en una gestión fluida,
+                centralizando cada decisión crítica de tu obra en una sola interfaz.</h3>
         </div>
 
         <div class="differences-group-cards">
             <article class="differences-card">
                 <i data-lucide="package" aria-hidden="true"></i>
-                <h3 data-i18n="differences_card_1_title" >Gestión de Inventario</h3>
+                <h3 data-i18n="differences_card_1_title">Gestión de Inventario</h3>
                 <p data-i18n="differences_card_1_description">Optimiza recursos y evita compras duplicadas.</p>
             </article>
 
@@ -118,19 +142,22 @@
             <article class="differences-card">
                 <i data-lucide="clipboard-check" aria-hidden="true"></i>
                 <h3 data-i18n="differences_card_3_title">Trazabilidad de Planos </h3>
-                <p data-i18n="differences_card_3_description">Asegura el uso de la versión final y evita errores costosos.</p>
+                <p data-i18n="differences_card_3_description">Asegura el uso de la versión final y evita errores
+                    costosos.</p>
             </article>
 
             <article class="differences-card">
                 <i data-lucide="file-text" aria-hidden="true"></i>
                 <h3 data-i18n="differences_card_4_title">Registro de RNC</h3>
-                <p data-i18n="differences_card_4_description">Automatiza auditorías y garantiza el control de calidad.</p>
+                <p data-i18n="differences_card_4_description">Automatiza auditorías y garantiza el control de calidad.
+                </p>
             </article>
 
             <article class="differences-card">
                 <i data-lucide="users" aria-hidden="true"></i>
                 <h3 data-i18n="differences_card_5_title">Comunicación Centralizada</h3>
-                <p data-i18n="differences_card_5_description">Flujo de información fluido entre obreros, ingenieros y clientes.</p>
+                <p data-i18n="differences_card_5_description">Flujo de información fluido entre obreros, ingenieros y
+                    clientes.</p>
             </article>
 
             <article class="differences-card">
@@ -148,7 +175,8 @@
                 </div>
                 <h3 data-i18n="roles_card_1_title">Equipos de Logística</h3>
                 <p data-i18n="roles_card_1_description">
-                    Optimiza tus procesos hoy: solicita una demo y descubre cómo Kipu revoluciona tu logística operativa.
+                    Optimiza tus procesos hoy: solicita una demo y descubre cómo Kipu revoluciona tu logística
+                    operativa.
                 </p>
                 <button class="role-btn" data-i18n="roles_card_1_button">
                     Solicitar Demostración →
@@ -160,7 +188,8 @@
                 </div>
                 <h3 data-i18n="roles_card_2_title">Gestores Operativos</h3>
                 <p data-i18n="roles_card_2_description">
-                    Mira Kipu en acción y transforma la gestión de tus proyectos con nuestra tecnología de validación en tiempo real.
+                    Mira Kipu en acción y transforma la gestión de tus proyectos con nuestra tecnología de validación en
+                    tiempo real.
                 </p>
                 <button class="role-btn role-btn-light" data-i18n="roles_card_2_button">
                     Solicitar Demostración →
@@ -168,7 +197,7 @@
             </article>
         </div>
     </section>
-    <section class="team">
+    <section class="team" id="team">
         <div class="team-info">
             <div class="pretitle">
                 <p data-i18n="team_pretitle">Nuestro equipo</p>
@@ -190,7 +219,8 @@
                 <div class="member">
                     <h3 class="name">Jhony Francia</h3>
                     <p class="role" data-i18n="team_member_1_role">Software Developer, Database Designer & Manager</p>
-                    <p class="detail" data-i18n="team_member_1_detail">Estudiante de Ingeniería de Software, experiencia en C#, HTML y SQL</p>
+                    <p class="detail" data-i18n="team_member_1_detail">Estudiante de Ingeniería de Software, experiencia
+                        en C#, HTML y SQL</p>
                 </div>
             </li>
             <li class="member-item">
@@ -205,7 +235,8 @@
                 <div class="member">
                     <h3 class="name">Diego Ramos</h3>
                     <p class="role" data-i18n="team_member_2_role">Software Architect</p>
-                    <p class="detail" data-i18n="team_member_2_detail">Estudiante de Ingeniería de Software, experiencia con Javascript, Java y C#.</p>
+                    <p class="detail" data-i18n="team_member_2_detail">Estudiante de Ingeniería de Software, experiencia
+                        con Javascript, Java y C#.</p>
                 </div>
             </li>
             <li class="member-item">
@@ -220,7 +251,8 @@
                 <div class="member">
                     <h3 class="name">Marcelo Pareja</h3>
                     <p class="role" data-i18n="team_member_3_role">Domain Analyst</p>
-                    <p class="detail" data-i18n="team_member_3_detail">Estudiante de Ingeniería de Software, experiencia con Javascript, Java y C#.</p>
+                    <p class="detail" data-i18n="team_member_3_detail">Estudiante de Ingeniería de Software, experiencia
+                        con Javascript, Java y C#.</p>
                 </div>
             </li>
             <li class="member-item">
@@ -235,7 +267,8 @@
                 <div class="member">
                     <h3 class="name">Neo Ramos</h3>
                     <p class="role" data-i18n="team_member_4_role">Software Developer, UX/UI Designer</p>
-                    <p class="detail" data-i18n="team_member_4_detail">Estudiante de Ingeniería de Software, experiencia con Javascript, Java y C#.</p>
+                    <p class="detail" data-i18n="team_member_4_detail">Estudiante de Ingeniería de Software, experiencia
+                        con Javascript, Java y C#.</p>
                 </div>
             </li>
             <li class="member-item">
@@ -250,7 +283,8 @@
                 <div class="member">
                     <h3 class="name">Paula Montoya</h3>
                     <p class="role" data-i18n="team_member_5_role">Team Leader</p>
-                    <p class="detail" data-i18n="team_member_5_detail">Estudiante de Ingeniería de Software, experiencia con Javascript, Java y C#.</p>
+                    <p class="detail" data-i18n="team_member_5_detail">Estudiante de Ingeniería de Software, experiencia
+                        con Javascript, Java y C#.</p>
                 </div>
             </li>
         </ul>
@@ -262,7 +296,8 @@
         <header class="pricing-header">
             <span class="pricing-header__badge" data-i18n="pricing_badge">Suscripciones</span>
             <h2 class="pricing-header__title" data-i18n="pricing_title">Elige a Kipu! Con un descuento especial!</h2>
-            <p class="pricing-header__subtitle" data-i18n="pricing_subtitle">Las mejores funcionalidades a un precio razonable.</p>
+            <p class="pricing-header__subtitle" data-i18n="pricing_subtitle">Las mejores funcionalidades a un precio
+                razonable.</p>
         </header>
 
         <!-- Pricing Cards Container -->
@@ -272,8 +307,10 @@
             <article class="pricing-card">
                 <header class="pricing-card__header">
                     <div class="pricing-card__icon-wrapper pricing-card__icon-wrapper--light">
-                        <svg class="pricing-card__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg class="pricing-card__icon" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                     </div>
                     <h3 class="pricing-card__title" data-i18n="pricing_free_title">Free</h3>
@@ -284,30 +321,38 @@
                     <span class="pricing-card__period" data-i18n="pricing_period">/mes</span>
                 </div>
 
-                <p class="pricing-card__description" data-i18n="pricing_free_description">La prueba que necesitas para decidirte por Kipu</p>
+                <p class="pricing-card__description" data-i18n="pricing_free_description">La prueba que necesitas para
+                    decidirte por Kipu</p>
 
                 <ul class="pricing-card__features-list">
                     <li class="pricing-card__feature-item">
-                        <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                         <span data-i18n="pricing_free_feature_1">Trazabilidad de Planos Básica</span>
                     </li>
                     <li class="pricing-card__feature-item">
-                        <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                         <span data-i18n="pricing_free_feature_2">Core de Gestión de Obra</span>
                     </li>
                     <li class="pricing-card__feature-item">
-                        <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                         <span data-i18n="pricing_free_feature_3">Almacenamiento de inventario limitado</span>
                     </li>
                 </ul>
 
-                <a href="#" class="pricing-card__button pricing-card__button--outline" data-i18n="pricing_free_button">Comenzar Gratis</a>
+                <a href="#" class="pricing-card__button pricing-card__button--outline"
+                    data-i18n="pricing_free_button">Comenzar Gratis</a>
             </article>
 
             <!-- 2. Professional Plan Card (Highlighted) -->
@@ -318,8 +363,10 @@
                 <div class="pricing-card__content-wrapper">
                     <header class="pricing-card__header">
                         <div class="pricing-card__icon-wrapper pricing-card__icon-wrapper--solid">
-                            <svg class="pricing-card__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <svg class="pricing-card__icon" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                         </div>
                         <h3 class="pricing-card__title" data-i18n="pricing_pro_title">Professional</h3>
@@ -330,42 +377,55 @@
                         <span class="pricing-card__period" data-i18n="pricing_period">/mes</span>
                     </div>
 
-                    <p class="pricing-card__description" data-i18n="pricing_pro_description">La solución SaaS completa y lista para usar, con soporte dedicado.</p>
+                    <p class="pricing-card__description" data-i18n="pricing_pro_description">La solución SaaS completa y
+                        lista para usar, con soporte dedicado.</p>
 
                     <ul class="pricing-card__features-list">
                         <li class="pricing-card__feature-item">
-                            <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                             <span data-i18n="pricing_pro_feature_1">Alertas de Stock Crítico</span>
                         </li>
                         <li class="pricing-card__feature-item">
-                            <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                             <span data-i18n="pricing_pro_feature_2">Proyectos Ilimitados</span>
                         </li>
                         <li class="pricing-card__feature-item">
-                            <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                             <span data-i18n="pricing_pro_feature_3">Módulo IoT Avanzado</span>
                         </li>
                         <li class="pricing-card__feature-item">
-                            <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                             <span data-i18n="pricing_pro_feature_4">Dashboard de KPIs</span>
                         </li>
                         <li class="pricing-card__feature-item">
-                            <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
-                            <span data-i18n="pricing_pro_feature_5">Gestión avanzada de documentación a tiempo real</span>
+                            <span data-i18n="pricing_pro_feature_5">Gestión avanzada de documentación a tiempo
+                                real</span>
                         </li>
                     </ul>
 
-                    <a href="#" class="pricing-card__button pricing-card__button--solid" data-i18n="pricing_pro_button">Comenzar Prueba</a>
+                    <a href="#" class="pricing-card__button pricing-card__button--solid"
+                        data-i18n="pricing_pro_button">Comenzar Prueba</a>
                 </div>
             </article>
 
@@ -373,42 +433,52 @@
             <article class="pricing-card">
                 <header class="pricing-card__header">
                     <div class="pricing-card__icon-wrapper pricing-card__icon-wrapper--light">
-                        <svg class="pricing-card__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg class="pricing-card__icon" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                     </div>
                     <h3 class="pricing-card__title" data-i18n="pricing_ent_title">Enterprise</h3>
                 </header>
 
                 <div class="pricing-card__price-block">
-                        <span class="pricing-card__price pricing-card__price--text" data-i18n="pricing_custom">Custom</span>
-                        <span class="pricing-card__period" data-i18n="pricing_period">/mes</span>
+                    <span class="pricing-card__price pricing-card__price--text" data-i18n="pricing_custom">Custom</span>
+                    <span class="pricing-card__period" data-i18n="pricing_period">/mes</span>
                 </div>
 
-                <p class="pricing-card__description" data-i18n="pricing_ent_description">Una cotización especial para las empresas.</p>
+                <p class="pricing-card__description" data-i18n="pricing_ent_description">Una cotización especial para
+                    las empresas.</p>
 
                 <ul class="pricing-card__features-list">
                     <li class="pricing-card__feature-item">
-                        <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                         <span data-i18n="pricing_ent_feature_1">Flexibilidad en el modelo de negocio</span>
                     </li>
                     <li class="pricing-card__feature-item">
-                        <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                         <span data-i18n="pricing_ent_feature_2">Control de costos y escalabilidad</span>
                     </li>
                     <li class="pricing-card__feature-item">
-                        <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg class="pricing-card__feature-check" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                         <span data-i18n="pricing_ent_feature_3">Seguridad y propiedad de datos</span>
                     </li>
                 </ul>
 
-                <a href="#" class="pricing-card__button pricing-card__button--outline" data-i18n="pricing_ent_button">Contactar Ventas</a>
+                <a href="#" class="pricing-card__button pricing-card__button--outline"
+                    data-i18n="pricing_ent_button">Contactar Ventas</a>
             </article>
 
         </div>
@@ -418,7 +488,8 @@
         <header class="contact-header">
             <span class="contact-header__badge" data-i18n="contact_badge">Contacto</span>
             <h2 class="contact-header__title" data-i18n="contact_title">Comunicate con nosotros</h2>
-            <p class="contact-header__subtitle" data-i18n="contact_subtitle">Kipu se mantiene a la espera de nuevas empresas que esten interesadas en nuestro proyecto.</p>
+            <p class="contact-header__subtitle" data-i18n="contact_subtitle">Kipu se mantiene a la espera de nuevas
+                empresas que esten interesadas en nuestro proyecto.</p>
         </header>
 
         <div class="contact-grid">
@@ -429,27 +500,32 @@
                     <div class="contact-form__row">
                         <label>
                             <span data-i18n="contact_first_name">Nombre</span>
-                            <input type="text" data-i18n-placeholder="contact_placeholder_first_name" placeholder="Tu nombre">
+                            <input type="text" data-i18n-placeholder="contact_placeholder_first_name"
+                                placeholder="Tu nombre">
                         </label>
                         <label>
                             <span data-i18n="contact_last_name">Apellido</span>
-                            <input type="text" data-i18n-placeholder="contact_placeholder_last_name" placeholder="Tu apellido">
+                            <input type="text" data-i18n-placeholder="contact_placeholder_last_name"
+                                placeholder="Tu apellido">
                         </label>
                     </div>
 
                     <label>
                         <span data-i18n="contact_email">Email</span>
-                        <input type="email" data-i18n-placeholder="contact_placeholder_email" placeholder="correo@empresa.com">
+                        <input type="email" data-i18n-placeholder="contact_placeholder_email"
+                            placeholder="correo@empresa.com">
                     </label>
 
                     <label>
                         <span data-i18n="contact_company">Empresa</span>
-                        <input type="text" data-i18n-placeholder="contact_placeholder_company" placeholder="Nombre de la empresa">
+                        <input type="text" data-i18n-placeholder="contact_placeholder_company"
+                            placeholder="Nombre de la empresa">
                     </label>
 
                     <label>
                         <span data-i18n="contact_message">Mensaje</span>
-                        <textarea rows="6" data-i18n-placeholder="contact_placeholder_message" placeholder="Cuéntanos de tu proyecto"></textarea>
+                        <textarea rows="6" data-i18n-placeholder="contact_placeholder_message"
+                            placeholder="Cuéntanos de tu proyecto"></textarea>
                     </label>
 
                     <button type="submit" class="contact-submit-btn">
@@ -497,10 +573,10 @@
         </div>
     </section>
 
-    <button class="language-toggle" type="button" aria-label="Toggle language">EN</button>
+
 
     <footer>
-        <p data-i18n="footer_copy">© 2024 Kipu. Todos los derechos reservados.</p>
+        <p data-i18n="footer_copy">© 2026 Kipu. Todos los derechos reservados.</p>
     </footer>
     <script>
         lucide.createIcons({

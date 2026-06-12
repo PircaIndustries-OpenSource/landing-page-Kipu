@@ -63,3 +63,44 @@ html {
     object-fit: contain;
     display: block;
 }
+
+/* Language Switcher */
+.language-switcher {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(44, 62, 80, 0.06);
+    border: 1px solid rgba(44, 62, 80, 0.1);
+    border-radius: 2rem;
+    padding: 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.language-switcher:hover {
+    background-color: rgba(44, 62, 80, 0.09);
+    border-color: rgba(44, 62, 80, 0.15);
+}
+
+.language-switcher .lang-btn {
+    background: none;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    cursor: pointer;
+    border-radius: 1.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1;
+}
+
+.language-switcher .lang-btn.active {
+    background-color: var(--color-accent);
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(52, 152, 219, 0.3);
+}
+
+.language-switcher .lang-btn:hover:not(.active) {
+    color: var(--color-accent);
+    background-color: rgba(52, 152, 219, 0.08);
+}
