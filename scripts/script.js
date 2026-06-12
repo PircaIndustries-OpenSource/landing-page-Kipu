@@ -100,9 +100,7 @@ const translations = {
 		contact_phone_label: "Telefono",
 		contact_address_label: "Direccion",
 		contact_address_text: "123 Lima, Lima 12345",
-		footer_copy: "© 2024 Kipu. Todos los derechos reservados.",
-		lang_toggle_text: "EN",
-		lang_toggle_aria: "Cambiar idioma a ingles"
+		footer_copy: "© 2024 Kipu. Todos los derechos reservados."
 	},
 	en: {
 		page_title: "Kipu",
@@ -205,13 +203,11 @@ const translations = {
 		contact_phone_label: "Phone",
 		contact_address_label: "Address",
 		contact_address_text: "123 Lima, Lima 12345",
-		footer_copy: "© 2024 Kipu. All rights reserved.",
-		lang_toggle_text: "ES",
-		lang_toggle_aria: "Switch language to Spanish"
+		footer_copy: "© 2024 Kipu. All rights reserved."
 	}
 };
 
-const languageButton = document.querySelector(".language-toggle");
+const langButtons = document.querySelectorAll(".lang-btn");
 
 function applyTranslations(language) {
 	const selected = translations[language];
@@ -240,30 +236,32 @@ function applyTranslations(language) {
 		}
 	});
 
-	if (languageButton) {
-		languageButton.textContent = selected.lang_toggle_text;
-		languageButton.setAttribute("aria-label", selected.lang_toggle_aria);
-	}
+	// Update active state in switcher buttons
+	langButtons.forEach(btn => {
+		if (btn.getAttribute("data-lang") === language) {
+			btn.classList.add("active");
+			btn.setAttribute("aria-current", "true");
+		} else {
+			btn.classList.remove("active");
+			btn.removeAttribute("aria-current");
+		}
+	});
 }
 
-function setupLanguageToggle() {
+function setupLanguageSwitcher() {
 	const storedLanguage = localStorage.getItem("kipu-language");
 	const initialLanguage = storedLanguage === "en" ? "en" : "es";
 
 	applyTranslations(initialLanguage);
 
-	if (!languageButton) {
-		return;
-	}
-
-	languageButton.addEventListener("click", () => {
-		const currentLanguage = document.documentElement.lang === "en" ? "en" : "es";
-		const nextLanguage = currentLanguage === "es" ? "en" : "es";
-
-		localStorage.setItem("kipu-language", nextLanguage);
-		applyTranslations(nextLanguage);
+	langButtons.forEach(btn => {
+		btn.addEventListener("click", () => {
+			const targetLanguage = btn.getAttribute("data-lang");
+			localStorage.setItem("kipu-language", targetLanguage);
+			applyTranslations(targetLanguage);
+		});
 	});
 }
 
-setupLanguageToggle();
+setupLanguageSwitcher();
 
