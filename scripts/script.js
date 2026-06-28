@@ -265,3 +265,12 @@ function setupLanguageSwitcher() {
 
 setupLanguageSwitcher();
 
+// Hamburger menu toggle
+const burgerBtn = document.getElementById("burger-menu-btn");
+const mainNav = document.querySelector(".main-navigation");
+if (burgerBtn && mainNav) {
+	burgerBtn.addEventListener("click", () => {
+		mainNav.classList.toggle("active");
+	});
+}
+

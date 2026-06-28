@@ -104,3 +104,54 @@ html {
     color: var(--color-accent);
     background-color: rgba(52, 152, 219, 0.08);
 }
+
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.burger-menu:hover {
+    color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        padding: 1.0rem 2.0rem;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .main-navigation {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-main);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        padding: 2rem 0;
+        z-index: 99;
+    }
+
+    .main-navigation.active {
+        display: block;
+    }
+
+    .main-navigation .nav-list {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .main-navigation .nav-list .nav-action button {
+        width: 80%;
+        max-width: 300px;
+    }
+}
