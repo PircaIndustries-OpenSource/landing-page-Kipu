@@ -100,7 +100,18 @@ const translations = {
 		contact_phone_label: "Telefono",
 		contact_address_label: "Direccion",
 		contact_address_text: "123 Lima, Lima 12345",
-		footer_copy: "© 2024 Kipu. Todos los derechos reservados."
+		footer_company: "Empresa",
+		footer_company_home: "Inicio",
+		footer_company_features: "Características",
+		footer_company_team: "Equipo",
+		footer_company_pricing: "Planes",
+		footer_legal: "Legal",
+		footer_legal_terms: "Términos de Servicio",
+		footer_legal_privacy: "Política de Privacidad",
+		footer_legal_cookies: "Uso de Cookies",
+		footer_contact: "Contacto",
+		footer_motto: "El aliado digital que transforma el caos de la construccion en orden total.",
+		footer_copy: "© 2026 Kipu. Todos los derechos reservados."
 	},
 	en: {
 		page_title: "Kipu",
@@ -203,7 +214,18 @@ const translations = {
 		contact_phone_label: "Phone",
 		contact_address_label: "Address",
 		contact_address_text: "123 Lima, Lima 12345",
-		footer_copy: "© 2024 Kipu. All rights reserved."
+		footer_company: "Company",
+		footer_company_home: "Home",
+		footer_company_features: "Features",
+		footer_company_team: "Team",
+		footer_company_pricing: "Plans",
+		footer_legal: "Legal",
+		footer_legal_terms: "Terms of Service",
+		footer_legal_privacy: "Privacy Policy",
+		footer_legal_cookies: "Cookie Use",
+		footer_contact: "Contact",
+		footer_motto: "The digital ally that transforms construction chaos into total order.",
+		footer_copy: "© 2026 Kipu. All rights reserved."
 	}
 };
 
