@@ -80,7 +80,7 @@
                     onclick="window.location.href='https://kipu-frontend-42d0d.web.app/register'"><span
                         data-i18n="home_cta_primary">Crear Cuenta Gratuita</span> <i
                         class="fa-solid fa-arrow-right"></i></button>
-                <button class="btn-watch-demostration"><i class="fa-solid fa-play"></i> <span
+                <button class="btn-watch-demostration" onclick="window.location.href='#contact'"><i class="fa-solid fa-play"></i> <span
                         data-i18n="home_cta_secondary">Ver Demostración</span></button>
             </div>
         </div>
@@ -181,7 +181,7 @@
                     Optimiza tus procesos hoy: solicita una demo y descubre cómo Kipu revoluciona tu logística
                     operativa.
                 </p>
-                <button class="role-btn" data-i18n="roles_card_1_button">
+                <button class="role-btn" data-i18n="roles_card_1_button" onclick="window.location.href='#contact'">
                     Solicitar Demostración →
                 </button>
             </article>
@@ -194,7 +194,7 @@
                     Mira Kipu en acción y transforma la gestión de tus proyectos con nuestra tecnología de validación en
                     tiempo real.
                 </p>
-                <button class="role-btn role-btn-light" data-i18n="roles_card_2_button">
+                <button class="role-btn role-btn-light" data-i18n="roles_card_2_button" onclick="window.location.href='#contact'">
                     Solicitar Demostración →
                 </button>
             </article>
@@ -291,6 +291,9 @@
                 </div>
             </li>
         </ul>
+        <div class="team-video">
+            <iframe src="https://www.youtube.com/embed/C89kK7camaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </section>
 
     <section class="pricing-section" id="pricing">
@@ -578,8 +581,47 @@
 
 
 
-    <footer>
-        <p data-i18n="footer_copy">© 2026 Kipu. Todos los derechos reservados.</p>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="./images/logoWithOutBackground.png" alt="Kipu Logo" class="footer-logo">
+                <p data-i18n="footer_motto">El aliado digital que transforma el caos de la construccion en orden total.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4 data-i18n="footer_company">Empresa</h4>
+                    <ul>
+                        <li><a href="#home" data-i18n="footer_company_home">Inicio</a></li>
+                        <li><a href="#differences" data-i18n="footer_company_features">Características</a></li>
+                        <li><a href="#team" data-i18n="footer_company_team">Equipo</a></li>
+                        <li><a href="#pricing" data-i18n="footer_company_pricing">Planes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_legal">Legal</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer_legal_terms">Términos de Servicio</a></li>
+                        <li><a href="#" data-i18n="footer_legal_privacy">Política de Privacidad</a></li>
+                        <li><a href="#" data-i18n="footer_legal_cookies">Uso de Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_contact">Contacto</h4>
+                    <ul class="footer-contact-info">
+                        <li><i class="fa-regular fa-envelope"></i> kipu_org@company.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_copy">© 2026 Kipu. Todos los derechos reservados.</p>
+        </div>
     </footer>
     <script>
         lucide.createIcons({
